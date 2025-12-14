@@ -6,23 +6,23 @@ export const getOtpCode = () =>
 export const SAFE_USER_SELECT =
   "-password -otpCode -otpExpiry -passwordResetId -passwordResetExpiry";
 
-export const PLANS = {
-  basic: {
-    credits: 2,
-    price: 0,
-    priceId: "",
-  },
-  standard: {
-    credits: 12,
-    price: 100,
-    priceId: process.env?.STANDARD_PRODUCT_ID,
-  },
-  premium: {
-    credits: 24,
-    price: 100,
-    priceId: process.env?.PREMIUM_PRODUCT_ID,
-  },
-};
+// export const PLANS = {
+//   basic: {
+//     credits: 2,
+//     price: 0,
+//     priceId: "",
+//   },
+//   standard: {
+//     credits: 12,
+//     price: 100,
+//     priceId: process.env?.STANDARD_PRODUCT_ID,
+//   },
+//   premium: {
+//     credits: 24,
+//     price: 100,
+//     priceId: process.env?.PREMIUM_PRODUCT_ID,
+//   },
+// };
 
 export const generatePrompt = (country: string, loggedInUser: UserDocument) => `
 You are an expert international education consultant helping Pakistani students plan higher studies abroad.
