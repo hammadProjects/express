@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.ts"
   },
   "dependencies": {
     "@cloudflare/realtimekit": "^1.2.1",
