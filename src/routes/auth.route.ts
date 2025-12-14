@@ -9,8 +9,9 @@ const authRouter = Router();
 
 authRouter.post(
   "/sign-up",
-  limiter("Too many attempts to create an account. Please Try again later.")
+  limiter("Too many attempts to create an account. Please Try again later."),
   //   validateRequest(signUpSchema),
+  authController.signUp
 );
 
 authRouter.post(
